@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabulky v HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
 </head>
+
 <body>
-    <header>Tabulky v HTML</header>
+    <header>
+        <h1>Tabulky v HTML</h1>
+    </header>
     <main>
-        <h2>Slavná osobnost: Josef někdo</h2>
-        <table border=1>
+        <h2>Slavná osobnost: Zdeněk Svěrák</h2>
+        <table>
             <caption>Vizitka slavné osobnosti</caption>
             <thead>
                 <tr>
@@ -21,28 +27,67 @@
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="3"><img src="img/Vladislav_Vančura.jpg" height="200" alt="Vladislav Vančura"></td>
-                    <td colspan="2">Jméno a příjemní</td>
-                    <td rowspan="4">Díla</td>
+                    <td rowspan="3"><img src="img/zdeneksverak.jpg" height="200" alt="Zdeněk Svěrák"></td>
+                    <td colspan="2">Zdeněk Svěrák</td>
+                    <td rowspan="4" class="left">
+                        <h3>Divadlo</h3>
+                        <li>Všechny hry s Járou Cimrmanem např. <a
+                                href="https://cs.wikipedia.org/wiki/Hospoda_Na_m%C3%BDtince">Hospoda na mýtince</a></li>
+                        <h3>Hubda</h3>
+                        <li>Zpívánky pro mladé např. <a
+                                href="https://cs.wikipedia.org/wiki/Hospoda_Na_m%C3%BDtince">Zpěvník</a></li>
+                        <h3>Scénář</h3>
+                        <li>Zabývá se pohádkami pro mladé např. <a
+                                href="https://cs.wikipedia.org/wiki/T%C5%99i_brat%C5%99i_(film)">Tři Bratři</a></li>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Narození</td>
-                    <td>Úmrtí</td>
+                    <td>28.března 1936</td>
+                    <td>Stále žije, má 85 let</td>
                 </tr>
                 <tr>
-                    <td rowspan="2" colspan="2">Stručná charakteristika</td>
+                    <td rowspan="2" colspan="2" class="left">
+                        <li>Spolu s Ladislavem Smoljakem vytvořili legendární fitkivní postavu Jára Cimrman</li>
+                        <li>Je český dramatik, scenárista, herec, autor písňových textů a spisovatel</li>
+                        <li>Studoval gymnázium a poté Vysokou školu pedagogickou</li>
+                        <li>V dětsví se chtěl stát řidičem pekařského auto, posléze prezidentem nebo průvodčím</li>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Popisek fotky</td>
+                    <td>Zdeněk Svěrák v roce 2019</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="4">Odkaz na Wikipedii</td>
+                    <td colspan="4"><a href="https://cs.wikipedia.org/wiki/Zden%C4%9Bk_Sv%C4%9Br%C3%A1k">Podívejte se na
+                            wikipedii pro více informací</a></td>
                 </tr>
             </tfoot>
         </table>
+        <h2>Značky a atributy tabulky </h2>
+        <dl>
+            <dt>colspan</dt>
+            <dd>Atribut zajišťující ropětí přes několik sloupců</dd>
+            <dt>rowspan</dt>
+            <dd>Atribut zajišťující ropětí přes několik řádků</dd>
+            <dt>table</dt>
+            <dd>Definuje tabulku</dd>
+            <dt>th</dt>
+            <dd>Definuje vrchní buňku tabulky</dd>
+            <dt>tr</dt>
+            <dd>Definuje řádek v tabulce</dd>
+            <dt>td</dt>
+            <dd>Definuje buňku v tabulce</dd>
+            <dt>thead</dt>
+            <dd>Seskupí vrchní kontent v tabulce</dd>
+            <dt>tbody</dt>
+            <dd>Seskupí kontent uprostřed tabulky</dd>
+            <dt>tfoot</dt>
+            <dd>Seskupí spodní kontent tabulky</dd>
+
+        </dl>
     </main>
     <footer></footer>
 </body>
+
 </html>
